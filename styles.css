@@ -104,6 +104,33 @@ a:hover {
   border-bottom-color: var(--accent-color);
 }
 
+/* Burger button is hidden on desktop and shown only in the mobile media query */
+.burger-btn {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 38px;
+  height: 36px;
+  padding: 6px 8px;
+  background-color: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.burger-btn:hover {
+  border-color: var(--accent-color);
+}
+
+.burger-bar {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--text-color);
+  border-radius: 1px;
+}
+
 .theme-btn {
   background-color: transparent;
   color: var(--text-color);
@@ -491,13 +518,26 @@ body.dark-theme .primary-btn {
    ========================================================================== */
 @media (max-width: 680px) {
   .nav-container {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  .burger-btn {
+    display: inline-flex;
   }
 
   .nav-links {
-    gap: 14px;
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    order: 3;
+    gap: 12px;
+    padding-top: 12px;
+    margin-top: 8px;
+    border-top: 1px solid var(--border-color);
+  }
+
+  .nav-links.open {
+    display: flex;
   }
 
   .resume-header {

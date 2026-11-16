@@ -79,7 +79,28 @@ themeToggleBtn.addEventListener("click", function () {
 });
 
 // ==========================================================================
-// 4. Contact Form Validation
+// 4. Mobile Burger Menu Toggle
+// Shows or hides the navigation links when the burger button is clicked.
+// ==========================================================================
+const menuToggleBtn = document.getElementById("menu-toggle");
+const navLinksList = document.getElementById("nav-links");
+
+menuToggleBtn.addEventListener("click", function () {
+  const isMenuOpen = navLinksList.classList.toggle("open");
+  menuToggleBtn.setAttribute("aria-expanded", String(isMenuOpen));
+});
+
+// Close the mobile menu automatically after clicking a navigation link
+const navAnchors = navLinksList.querySelectorAll("a");
+for (let i = 0; i < navAnchors.length; i++) {
+  navAnchors[i].addEventListener("click", function () {
+    navLinksList.classList.remove("open");
+    menuToggleBtn.setAttribute("aria-expanded", "false");
+  });
+}
+
+// ==========================================================================
+// 5. Contact Form Validation
 // Checks that Name is not empty, Email is valid, and Message >= 20 characters.
 // ==========================================================================
 const contactForm = document.getElementById("contact-form");

@@ -11,13 +11,28 @@
   <!-- Top Navigation Bar (Flexbox row) -->
   <nav class="site-nav" aria-label="Primary Navigation">
     <div class="nav-container">
-      <ul class="nav-links">
+      <!-- Burger button (hidden on desktop, visible on mobile screens) -->
+      <button
+        type="button"
+        id="menu-toggle"
+        class="burger-btn"
+        aria-label="Toggle navigation menu"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+        <span class="burger-bar"></span>
+      </button>
+
+      <ul id="nav-links" class="nav-links">
         <li><a href="#summary">Summary</a></li>
         <li><a href="#education">Education</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
+
       <button type="button" id="theme-toggle" class="theme-btn" aria-pressed="false">
         Dark Mode
       </button>
