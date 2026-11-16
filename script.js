@@ -4,14 +4,14 @@
 // and render them onto the page with code instead of typing them in HTML.
 // ==========================================================================
 const skills = [
-  { name: "HTML5 & CSS3 (SASS)", level: "Proficient" },
-  { name: "Java", level: "Intermediate" },
+  { name: "HTML5 & CSS3 (SASS)", level: "Advanced" },
+  { name: "Java", level: "Beginner" },
   { name: "Python", level: "Intermediate" },
-  { name: "Kotlin & React Native", level: "Intermediate" },
-  { name: "Git, GitHub & VS Code", level: "Proficient" },
-  { name: "Android Studio & Figma", level: "Intermediate" },
+  { name: "Kotlin & React Native", level: "Beginner" },
+  { name: "Git, GitHub & VS Code", level: "Intermediate" },
+  { name: "Android Studio & Figma", level: "Advanced" },
   { name: "CapCut Pro & Canva", level: "Advanced" },
-  { name: "Microsoft Excel & PowerPoint", level: "Proficient" }
+  { name: "Microsoft Excel & PowerPoint", level: "Advanced" }
 ];
 
 const skillsListElement = document.getElementById("skills-list");
