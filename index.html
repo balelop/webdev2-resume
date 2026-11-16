@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Christian Aron C. Cabusas — Resume</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Top Navigation Bar (Flexbox row) -->
+  <nav class="site-nav" aria-label="Primary Navigation">
+    <div class="nav-container">
+      <ul class="nav-links">
+        <li><a href="#summary">Summary</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button type="button" id="theme-toggle" class="theme-btn" aria-pressed="false">
+        Dark Mode
+      </button>
+    </div>
+  </nav>
+
+  <div class="page-wrapper">
+    <!-- Header Section: Name, Target Job Title, Profile Photo, and Social Links -->
+    <header class="resume-header">
+      <div class="header-text">
+        <p class="eyebrow">Curriculum Vitae</p>
+        <h1>Christian Aron C. Cabusas</h1>
+        <p class="job-title">BS Computer Science Student &amp; Junior Software Developer</p>
+
+        <ul class="contact-meta">
+          <li>Silangan Ilaya, Nagcarlan, Laguna</li>
+          <li><a href="mailto:christianaroncabusas@gmail.com">christianaroncabusas@gmail.com</a></li>
+          <li><a href="tel:09266194031">09266194031</a></li>
+        </ul>
+
+        <div class="profile-links">
+          <!-- Update these URLs with your exact GitHub and LinkedIn usernames if different -->
+          <a href="https://github.com/balelop" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+          <span class="divider" aria-hidden="true">/</span>
+          <a href="https://www.linkedin.com/in/christianaroncabusas" target="_blank" rel="noopener noreferrer">LinkedIn Profile</a>
+        </div>
+      </div>
+
+      <div class="header-photo">
+        <img
+          src="images/profile.png"
+          alt="Portrait photo of Christian Aron C. Cabusas"
+          width="136"
+          height="136"
+        >
+      </div>
+    </header>
+
+    <!-- Main Resume Content -->
+    <main>
+
+      <!-- 1. Summary Section -->
+      <section id="summary" class="resume-section">
+        <h2 class="section-heading">Summary</h2>
+        <p class="summary-text">
+          I am a Computer Science student who focuses on finding practical solutions rather than dwelling on problems.
+          Highly motivated and eager to learn new technologies, I adapt quickly to different environments and commit fully
+          to getting the job done. I bring a solid foundation in programming and web development alongside strong
+          communication, organization, and technical editing experience from working with international clients.
+        </p>
+      </section>
+
+      <!-- 2. Education Section (Presented as an HTML Table) -->
+      <section id="education" class="resume-section">
+        <h2 class="section-heading">Education</h2>
+        <div class="table-wrapper">
+          <table class="education-table">
+            <thead>
+              <tr>
+                <th scope="col">Years</th>
+                <th scope="col">Program / Track</th>
+                <th scope="col">Institution</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="year-cell">2023 &ndash; Present</td>
+                <td><strong>Bachelor of Science in Computer Science</strong></td>
+                <td>Laguna College</td>
+                <td>Expected Graduation: 2027</td>
+              </tr>
+              <tr>
+                <td class="year-cell">2017 &ndash; 2023</td>
+                <td><strong>High School &mdash; STEM Strand</strong></td>
+                <td>Laguna College</td>
+                <td>Graduated</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- 3. Skills Section (Populated dynamically by script.js into this bulleted list) -->
+      <section id="skills" class="resume-section">
+        <h2 class="section-heading">Technical &amp; Professional Skills</h2>
+        <p class="section-note">
+          Core languages, development tools, and production software I work with:
+        </p>
+        <!-- JavaScript renders the <li> skill items inside this <ul> -->
+        <ul id="skills-list" class="skills-list"></ul>
+      </section>
+
+      <!-- 4. Experience & Certifications Section (Bulleted list + Show More / Show Less) -->
+      <section id="experience" class="resume-section">
+        <h2 class="section-heading">Work Experience &amp; Training</h2>
+
+        <ul class="experience-list">
+          <li class="experience-item">
+            <div class="experience-header">
+              <div>
+                <h3 class="role-title">Freelance Video Editor</h3>
+                <p class="organization">Remote</p>
+              </div>
+              <span class="date-range">2024 &ndash; 2025</span>
+            </div>
+            <ul class="task-list">
+              <li>Collaborated directly with international clients to define project scopes and manage revision rounds, ensuring 100% client satisfaction.</li>
+              <li>Edited and exported high-volume video content for YouTube, Facebook, and TikTok using CapCut Pro.</li>
+              <li>Demonstrated strong organizational skills by managing complex file structures and delivering projects on strict timelines.</li>
+            </ul>
+          </li>
+
+          <li class="experience-item">
+            <div class="experience-header">
+              <div>
+                <h3 class="role-title">Storekeeper</h3>
+                <p class="organization">Yoly's Dry Goods Store</p>
+              </div>
+              <span class="date-range">2016 &ndash; 2018</span>
+            </div>
+            <ul class="task-list">
+              <li>Managed daily shop operations, including precise cash handling and inventory management.</li>
+              <li>Maintained accurate manual and digital records of daily sales and stock levels.</li>
+              <li>Provided direct customer service, resolving inquiries and explaining product details to diverse customers.</li>
+            </ul>
+          </li>
+        </ul>
+
+        <!-- Extra details hidden initially and toggled by the button below -->
+        <div id="extra-experience" class="extra-details" hidden>
+          <h3 class="subheading">Certifications, Seminars &amp; Core Competencies</h3>
+          <ul class="certification-list">
+            <li>
+              <strong>Enhancing Internet and Web Standards: Addressing DNS Tampering</strong>
+              <span class="cert-year">(2024)</span>
+            </li>
+            <li>
+              <strong>Infrastructures of Repression: Cybersecurity and Human Rights in the Asia Pacific</strong>
+              <span class="cert-year">(2024)</span>
+            </li>
+            <li>
+              <strong>Building Holistic Resilience: Addressing Emerging Ethical and Social Challenges in the Digital and AI Age</strong>
+              <span class="cert-year">(2024)</span>
+            </li>
+            <li>
+              <strong>Shoorai: Combating Hate Speech and Fostering an Inclusive Digital Space</strong>
+              <span class="cert-year">(2024)</span>
+            </li>
+            <li>
+              <strong>Communication &amp; Soft Skills:</strong> Fluent in Tagalog and proficient in written and verbal English; strong problem solving, adaptability, time management, and attention to detail.
+            </li>
+          </ul>
+        </div>
+
+        <button
+          type="button"
+          id="toggle-details-btn"
+          class="secondary-btn"
+          aria-expanded="false"
+          aria-controls="extra-experience"
+        >
+          Show more
+        </button>
+      </section>
+
+      <!-- 5. Contact Section (Form with properly labeled fields and validation) -->
+      <section id="contact" class="resume-section no-print">
+        <h2 class="section-heading">Contact Me</h2>
+        <p class="section-note">
+          Feel free to reach out regarding internships, software projects, or collaborations.
+          You can email me directly at <a href="mailto:christianaroncabusas@gmail.com">christianaroncabusas@gmail.com</a> or send a message below.
+        </p>
+
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="form-group">
+            <label for="sender-name">Full Name</label>
+            <input
+              type="text"
+              id="sender-name"
+              name="senderName"
+              placeholder="Juan Dela Cruz"
+              required
+            >
+            <p id="name-error" class="error-message" role="alert"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="sender-email">Email Address</label>
+            <input
+              type="email"
+              id="sender-email"
+              name="senderEmail"
+              placeholder="juan@example.com"
+              required
+            >
+            <p id="email-error" class="error-message" role="alert"></p>
+          </div>
+
+          <div class="form-group">
+            <label for="sender-message">Message <span class="label-hint">(at least 20 characters)</span></label>
+            <textarea
+              id="sender-message"
+              name="senderMessage"
+              rows="4"
+              placeholder="Write your message or inquiry here..."
+              required
+            ></textarea>
+            <p id="message-error" class="error-message" role="alert"></p>
+          </div>
+
+          <button type="submit" class="primary-btn">Send Message</button>
+          <p id="form-success" class="success-message" role="status"></p>
+        </form>
+      </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="resume-footer">
+      <p>&copy; 2026 Christian Aron C. Cabusas &middot; Silangan Ilaya, Nagcarlan, Laguna</p>
+      <p class="footer-links">
+        <a href="https://github.com/balelop" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <span class="divider" aria-hidden="true">&middot;</span>
+        <a href="https://www.linkedin.com/in/christianaroncabusas" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <span class="divider" aria-hidden="true">&middot;</span>
+        <a href="mailto:christianaroncabusas@gmail.com">Email</a>
+      </p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
