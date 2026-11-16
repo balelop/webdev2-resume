@@ -2,6 +2,8 @@
 
 **Student:** Christian Aron C. Cabusas  
 **Program:** Bachelor of Science in Computer Science — Laguna College  
+**Live Website (Vercel):** https://webdev2-resume.vercel.app  
+**GitHub Repository:** https://github.com/balelop/webdev2-resume  
 
 ---
 
